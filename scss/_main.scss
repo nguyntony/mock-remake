@@ -8,9 +8,6 @@
     max-width: 50rem;
 
     h1 {
-      font-size: 7rem;
-      font-weight: 900;
-      color: $main-black;
       margin-bottom: 1rem;
     }
 
@@ -41,6 +38,10 @@
           &::placeholder {
             color: $caption;
           }
+
+          &:focus {
+            outline: none;
+          }
         }
 
         button {
@@ -51,7 +52,7 @@
           border: none;
           flex-grow: 1;
           background-color: $blue;
-          color: white;
+          color: $main-white;
 
           &:hover {
             cursor: pointer;

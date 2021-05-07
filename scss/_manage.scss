@@ -1,0 +1,50 @@
+.manage {
+  background-color: $dark-blue;
+  padding: 15rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  // background-image: linear-gradient(
+  //   to right,
+  //   $dark-blue,
+  //   $dark-blue 15%,
+  //   $dark-blue 15%,
+  //   $dark-blue 85%,
+  //   $bg1 85%
+  // );
+
+  &__content {
+    max-width: 55rem;
+
+    h1 {
+      color: #fafafa;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: $bg2;
+      margin: 1.5rem 0;
+      max-width: 50rem;
+    }
+
+    button {
+      @include small-btn;
+    }
+  }
+
+  &__graphic {
+    position: absolute;
+    top: -5rem;
+    right: 10rem;
+
+    .img-wrapper {
+      width: 45rem;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

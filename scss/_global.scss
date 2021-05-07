@@ -6,8 +6,10 @@ $Roboto: 'Roboto', sans-serif;
 
 // colors
 $blue: #1462e9;
+$dark-blue: #1e2b43;
 $bg1: #f1f4f9;
 $bg2: #f8fafc;
+$main-white: #fafafa;
 $main-black: #0b0b0d;
 $sub-black: #474a56;
 $caption: #929aab;
@@ -27,9 +29,21 @@ body {
   background-color: $bg2;
 }
 
+h1 {
+  font-size: 7rem;
+  font-weight: 900;
+  color: $main-black;
+}
+
+h2 {
+  font-size: 4rem;
+  color: $main-black;
+  letter-spacing: 0.25px;
+}
+
 h3 {
+  color: $main-black;
   font-size: 2rem;
-  margin: 0;
 }
 
 p {
@@ -37,4 +51,36 @@ p {
   color: $sub-black;
   word-spacing: 0.2rem;
   line-height: 1.7rem;
+}
+
+@mixin small-btn {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: $blue;
+  color: $main-white;
+  width: 16.5rem;
+  margin-bottom: 2rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+@mixin card {
+  flex-grow: 1;
+  margin-right: 5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

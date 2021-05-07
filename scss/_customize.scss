@@ -1,4 +1,40 @@
 .customize {
   background-color: $bg1;
   padding: 10rem;
+
+  &__content {
+    p {
+      max-width: 43rem;
+      margin: 1.5rem 0;
+    }
+
+    button {
+      @include small-btn;
+    }
+  }
+
+  &__cards-container {
+    @include card-container;
+
+    .card {
+      // width: 30rem;
+      @include card;
+
+      div {
+        // img will be added later
+        height: 20rem;
+        width: 100%;
+        background-color: #c0c6d2;
+        border-radius: 0.5rem;
+      }
+
+      h3 {
+        margin: 1.5rem 0;
+      }
+
+      p {
+        max-width: 24rem;
+      }
+    }
+  }
 }
