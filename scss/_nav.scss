@@ -1,0 +1,55 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg1;
+  padding: 2rem;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+
+    span {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    h3 {
+      color: $main-black;
+    }
+  }
+
+  &__links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: flex-end;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $main-black;
+        font-size: 1.5rem;
+        margin: 0rem 2rem;
+      }
+
+      &:last-child {
+        a {
+          background-color: $blue;
+          padding: 1rem 2rem;
+          border-radius: 0.5rem;
+          color: white;
+        }
+      }
+    }
+
+    .divider {
+      height: 2rem;
+      width: 0.18rem;
+      background-color: #bec9da;
+    }
+  }
+}

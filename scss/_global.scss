@@ -1,0 +1,27 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+$Lato: 'Lato', sans-serif;
+
+// colors
+$blue: #1462e9;
+$bg1: #f1f4f9;
+$bg2: #f8fafc;
+$main-black: #0b0b0d;
+$sub-black: #474a56;
+$caption: #929aab;
+
+// reset
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Lato;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
