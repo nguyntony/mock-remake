@@ -8,3 +8,8 @@ Redesign a dribble design, try to reference the [BEM](https://css-tricks.com/bem
 - use google fonts
 - for the grid in the ‘ship proficiently’ section, use the ‘padding’ method? 
 - the main graphic, it can just be one picture
+
+## Todo 
+- see how the picture, aspect ratio thing is done
+- look into [responsiveness](https://www.youtube.com/watch?v=r9fZZpcfdXg&list=WL&index=57&t=413s)
+- look into the shapes/patterns
