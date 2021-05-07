@@ -1,6 +1,8 @@
 // font
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 $Lato: 'Lato', sans-serif;
+$Roboto: 'Roboto', sans-serif;
 
 // colors
 $blue: #1462e9;
@@ -18,10 +20,21 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $Lato;
+  font-family: $Roboto;
+}
+
+body {
+  background-color: $bg2;
 }
 
 h3 {
   font-size: 2rem;
   margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  color: $sub-black;
+  word-spacing: 0.2rem;
+  line-height: 1.7rem;
 }

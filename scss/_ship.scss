@@ -1,0 +1,69 @@
+.ship {
+  background-color: $bg2;
+  padding: 10rem;
+
+  &__content {
+    h2 {
+      font-size: 4rem;
+      color: $main-black;
+      letter-spacing: 0.25px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $sub-black;
+      word-spacing: 0.2rem;
+      line-height: 1.7rem;
+      max-width: 43rem;
+      margin: 1.5rem 0;
+    }
+
+    button {
+      font-size: 1.3rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      outline: none;
+      border: none;
+      background-color: $blue;
+      color: white;
+      width: 16.5rem;
+      margin-bottom: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .card {
+      width: 30rem;
+      div {
+        // img will be added later
+        height: 20rem;
+        width: 100%;
+        background-color: #c0c6d2;
+        border-radius: 0.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+        max-width: 25rem;
+      }
+
+      .smallest-title {
+        max-width: 20rem;
+      }
+
+      p {
+        max-width: 24rem;
+      }
+    }
+  }
+}

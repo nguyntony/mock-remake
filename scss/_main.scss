@@ -1,11 +1,80 @@
-.section {
-  padding: 0 6rem;
-}
-
-.section--bg1 {
+.main {
+  display: flex;
+  justify-content: space-between;
   background-color: $bg1;
-}
+  padding: 5rem 10rem;
 
-.section--bg2 {
-  background-color: $bg2;
+  &__content {
+    max-width: 50rem;
+
+    h1 {
+      font-size: 7rem;
+      font-weight: 900;
+      color: $main-black;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 49rem;
+      line-height: 2rem;
+
+      a {
+        color: $sub-black;
+      }
+    }
+
+    &__email {
+      form {
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input {
+          height: 4rem;
+          font-size: 1.5rem;
+          padding: 0 2rem;
+          flex-grow: 5;
+          border: none;
+          border-radius: 0.5rem;
+
+          &::placeholder {
+            color: $caption;
+          }
+        }
+
+        button {
+          font-size: 1.5rem;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          outline: none;
+          border: none;
+          flex-grow: 1;
+          background-color: $blue;
+          color: white;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      p {
+        color: $caption;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__graphic {
+    .img-wrapper {
+      width: 40rem;
+      border-radius: 1rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
