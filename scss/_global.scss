@@ -77,10 +77,30 @@ p {
 }
 
 @mixin card {
-  flex-grow: 1;
+  width: 30rem;
   margin-right: 5rem;
 
   &:last-child {
     margin-right: 0;
   }
+
+  h3 {
+    margin: 1.5rem 0;
+    max-width: 25rem;
+  }
+
+  .smallest-title {
+    max-width: 20rem;
+  }
+
+  p {
+    max-width: 24rem;
+  }
+}
+
+@mixin card-img-container {
+  height: 20rem;
+  width: 100%;
+  background-color: #c0c6d2;
+  border-radius: 0.5rem;
 }
