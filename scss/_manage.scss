@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+
   // background-image: linear-gradient(
   //   to right,
   //   $dark-blue,
@@ -12,6 +13,10 @@
   //   $dark-blue 85%,
   //   $bg1 85%
   // );
+
+  @include media('>1800px') {
+    padding: 10rem 35rem;
+  }
 
   &__content {
     max-width: 55rem;
@@ -34,11 +39,11 @@
 
   &__graphic {
     position: absolute;
-    top: -5rem;
-    right: 10rem;
+    top: -13rem;
+    right: 35rem;
 
     .img-wrapper {
-      width: 45rem;
+      width: 40rem;
       border-radius: 1rem;
       overflow: hidden;
     }

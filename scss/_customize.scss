@@ -1,6 +1,12 @@
 .customize {
   background-color: $bg1;
   padding: 10rem;
+  padding-bottom: 20rem;
+
+  @include media('>1800px') {
+    padding: 10rem 35rem;
+    padding-bottom: 20rem;
+  }
 
   &__content {
     p {
@@ -15,6 +21,7 @@
 
   &__cards-container {
     @include card-container;
+    // display: none;
 
     .card {
       // width: 30rem;

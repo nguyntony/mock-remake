@@ -72,12 +72,12 @@ p {
 @mixin card-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 2rem 0;
 }
 
 @mixin card {
-  width: 30rem;
+  // play with this value to achieve a grid like structure. 40%, 100%
+  width: 25%;
   margin-right: 5rem;
 
   &:last-child {
@@ -86,21 +86,13 @@ p {
 
   h3 {
     margin: 1.5rem 0;
-    max-width: 25rem;
-  }
-
-  .smallest-title {
-    max-width: 20rem;
-  }
-
-  p {
-    max-width: 24rem;
   }
 }
 
-@mixin card-img-container {
-  height: 20rem;
-  width: 100%;
-  background-color: #c0c6d2;
+@mixin card-img {
   border-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 75%;
 }
