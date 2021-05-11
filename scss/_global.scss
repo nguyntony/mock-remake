@@ -33,12 +33,24 @@ h1 {
   font-size: 7rem;
   font-weight: 900;
   color: $main-black;
+
+  @include media('<699px') {
+    font-size: 5rem;
+  }
+
+  @include media('<500px') {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 4rem;
   color: $main-black;
   letter-spacing: 0.25px;
+
+  @include media('<699px') {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -73,12 +85,27 @@ p {
   display: flex;
   flex-direction: row;
   padding: 2rem 0;
+
+  @include media('<1180px') {
+    flex-wrap: wrap;
+  }
 }
 
 @mixin card {
   // play with this value to achieve a grid like structure. 40%, 100%
   width: 25%;
   margin-right: 5rem;
+
+  @include media('<1370px') {
+    width: 40%;
+    margin-bottom: 5rem;
+  }
+
+  @include media('<860px') {
+    width: 90%;
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+  }
 
   &:last-child {
     margin-right: 0;

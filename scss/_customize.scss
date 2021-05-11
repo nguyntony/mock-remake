@@ -1,11 +1,18 @@
 .customize {
   background-color: $bg1;
   padding: 10rem;
-  padding-bottom: 20rem;
+  // padding-bottom: 25rem;
+
+  @include media('>1550px') {
+    padding: 10rem 15rem;
+  }
 
   @include media('>1800px') {
-    padding: 10rem 35rem;
-    padding-bottom: 20rem;
+    padding: 10rem 25rem;
+  }
+
+  @include media('<550px') {
+    padding: 10rem 5rem;
   }
 
   &__content {
@@ -21,26 +28,28 @@
 
   &__cards-container {
     @include card-container;
-    // display: none;
 
     .card {
-      // width: 30rem;
       @include card;
 
-      div {
-        // img will be added later
-        height: 20rem;
-        width: 100%;
-        background-color: #c0c6d2;
-        border-radius: 0.5rem;
+      &__img-one {
+        @include card-img;
+        background-image: url(/img/custom1.jpeg);
       }
 
-      h3 {
-        margin: 1.5rem 0;
+      &__img-two {
+        @include card-img;
+        background-image: url(/img/custom2.jpeg);
       }
 
-      p {
-        max-width: 24rem;
+      &__img-three {
+        @include card-img;
+        background-image: url(/img/custom3.jpeg);
+      }
+
+      &__img-four {
+        @include card-img;
+        background-image: url(/img/custom4.jpeg);
       }
     }
   }

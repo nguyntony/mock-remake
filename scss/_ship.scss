@@ -2,8 +2,16 @@
   background-color: $bg2;
   padding: 10rem;
 
+  @include media('>1550px') {
+    padding: 10rem 15rem;
+  }
+
   @include media('>1800px') {
-    padding: 10rem 35rem;
+    padding: 10rem 25rem;
+  }
+
+  @include media('<550px') {
+    padding: 10rem 5rem;
   }
 
   &__content {
@@ -25,22 +33,22 @@
 
       &__img-one {
         @include card-img;
-        background-image: url(/img/logo1.png);
+        background-image: url(/img/ship1.png);
       }
 
       &__img-two {
         @include card-img;
-        background-image: url(/img/logo2.jpeg);
+        background-image: url(/img/ship2.jpeg);
       }
 
       &__img-three {
         @include card-img;
-        background-image: url(/img/logo3.png);
+        background-image: url(/img/ship3.png);
       }
 
       &__img-four {
         @include card-img;
-        background-image: url(/img/logo4.png);
+        background-image: url(/img/ship4.png);
       }
     }
   }

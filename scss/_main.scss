@@ -14,6 +14,10 @@
     padding: 5rem 35rem;
   }
 
+  @include media('<550px') {
+    padding: 5rem;
+  }
+
   &__content {
     max-width: 55rem;
     // background-color: coral;
@@ -38,6 +42,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        max-width: 51rem;
+
+        @include media('<555px') {
+          flex-direction: column;
+        }
 
         input {
           height: 4rem;
@@ -83,7 +92,7 @@
     .img-wrapper {
       overflow: hidden;
 
-      @include media('<1250px') {
+      @include media('<1180px') {
         display: none;
       }
 
