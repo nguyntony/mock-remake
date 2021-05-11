@@ -5,17 +5,7 @@
   justify-content: space-between;
   position: relative;
 
-  @include media('>1550px') {
-    padding: 15rem 25rem;
-  }
-
-  @include media('>1800px') {
-    padding: 10rem 35rem;
-  }
-
-  @include media('<550px') {
-    padding: 5rem;
-  }
+  @include spacing-one;
 
   &__content {
     max-width: 55rem;

@@ -5,22 +5,10 @@
   padding: 5rem 10rem;
   flex-grow: 1;
 
-  // smallest width to go to 320px;
-
-  @include media('>1550px') {
-    padding: 5rem 25rem;
-  }
-  @include media('>1800px') {
-    padding: 5rem 35rem;
-  }
-
-  @include media('<550px') {
-    padding: 5rem;
-  }
+  @include spacing-one;
 
   &__content {
     max-width: 55rem;
-    // background-color: coral;
 
     h1 {
       margin-bottom: 1.5rem;

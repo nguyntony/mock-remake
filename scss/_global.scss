@@ -123,3 +123,31 @@ p {
   background-position: center;
   padding-top: 75%;
 }
+
+@mixin spacing-one {
+  @include media('>1550px') {
+    padding: 10rem 25rem;
+  }
+
+  @include media('>1800px') {
+    padding: 10rem 35rem;
+  }
+
+  @include media('<550px') {
+    padding: 5rem;
+  }
+}
+
+@mixin spacing-two {
+  @include media('>1550px') {
+    padding: 10rem 15rem;
+  }
+
+  @include media('>1800px') {
+    padding: 10rem 25rem;
+  }
+
+  @include media('<550px') {
+    padding: 10rem 5rem;
+  }
+}

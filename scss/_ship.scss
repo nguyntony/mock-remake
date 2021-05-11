@@ -2,17 +2,7 @@
   background-color: $bg2;
   padding: 10rem;
 
-  @include media('>1550px') {
-    padding: 10rem 15rem;
-  }
-
-  @include media('>1800px') {
-    padding: 10rem 25rem;
-  }
-
-  @include media('<550px') {
-    padding: 10rem 5rem;
-  }
+  @include spacing-two;
 
   &__content {
     p {
